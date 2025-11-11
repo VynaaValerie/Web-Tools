@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egunkari • Complete Web Tools</title>
+    <meta name="description" content="Kumpulan lengkap tools downloader media, games, tools, dan lainnya dengan UI/UX profesional">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="style.css" as="style">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <div class="logo-icon">⚡</div>
+                        <div class="logo-text">
+                            <h1>Egunkari</h1>
+                            <span>Complete Tools</span>
+                        </div>
+                    </div>
+                    <div class="theme-toggle">
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="#downloader" class="nav-link active">
+                        <i class="fas fa-download"></i>
+                        <span>Downloader</span>
+                    </a>
+                    <a href="#games" class="nav-link">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Games</span>
+                    </a>
+                    <a href="#tools" class="nav-link">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools</span>
+                    </a>
+                    <a href="#apk" class="nav-link">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>APK</span>
+                    </a>
+                    <a href="#uploader" class="nav-link">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Uploader</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">
+                            Complete Web Tools 
+                            <span class="gradient-text">All in One</span>
+                        </h2>
+                        <p class="hero-description">
+                            Kumpulan lengkap tools modern dengan 50+ fitur termasuk downloader media, 
+                            games interaktif, tools utilitas, pencarian APK, dan file uploader.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Fitur</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Free</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">⚡</span>
+                                <span class="stat-label">Fast</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">🎯</span>
+                                <span class="stat-label">Accurate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="visual-card">
+                            <div class="card-header">
+                                <div class="card-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="feature-preview">
+                                    <div class="preview-item">
+                                        <i class="fas fa-download"></i>
+                                        <span>Downloader</span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Games</span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <i class="fas fa-tools"></i>
+                                        <span>Tools</span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>APK</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Downloader Section -->
+            <section id="downloader" class="tools-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h3>Downloader Media</h3>
+                        <p>Download media dari berbagai platform sosial media</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <!-- TikTok -->
+                        <div class="tool-card" data-category="downloader" data-service="tiktok">
+                            <div class="tool-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <h4>TikTok</h4>
+                            <p>Download video TikTok tanpa watermark</p>
+                            <div class="tool-badge">Popular</div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="tool-card" data-category="downloader" data-service="igdl">
+                            <div class="tool-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <h4>Instagram</h4>
+                            <p>Download post, reel, dan story IG</p>
+                            <div class="tool-badge">HD Quality</div>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="tool-card" data-category="downloader" data-service="facebook">
+                            <div class="tool-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <h4>Facebook</h4>
+                            <p>Download video Facebook</p>
+                        </div>
+
+                        <!-- CapCut -->
+                        <div class="tool-card" data-category="downloader" data-service="capcut">
+                            <div class="tool-icon">
+                                <i class="fas fa-scissors"></i>
+                            </div>
+                            <h4>CapCut</h4>
+                            <p>Download template dan video CapCut</p>
+                            <div class="tool-badge">New</div>
+                        </div>
+
+                        <!-- CapCut HD -->
+                        <div class="tool-card" data-category="downloader" data-service="capcutv2">
+                            <div class="tool-icon">
+                                <i class="fas fa-hd-video"></i>
+                            </div>
+                            <h4>CapCut HD</h4>
+                            <p>Download video HD tanpa watermark</p>
+                        </div>
+
+                        <!-- Douyin -->
+                        <div class="tool-card" data-category="downloader" data-service="douyin">
+                            <div class="tool-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Douyin</h4>
+                            <p>Download video Douyin (TikTok China)</p>
+                        </div>
+
+                        <!-- Pinterest -->
+                        <div class="tool-card" data-category="downloader" data-service="pinterest">
+                            <div class="tool-icon">
+                                <i class="fab fa-pinterest"></i>
+                            </div>
+                            <h4>Pinterest</h4>
+                            <p>Download gambar dan video Pinterest</p>
+                        </div>
+
+                        <!-- Apple Music -->
+                        <div class="tool-card" data-category="downloader" data-service="musicapple">
+                            <div class="tool-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <h4>Apple Music</h4>
+                            <p>Download lagu dari Apple Music</p>
+                        </div>
+
+                        <!-- Google Drive -->
+                        <div class="tool-card" data-category="downloader" data-service="gdrive">
+                            <div class="tool-icon">
+                                <i class="fab fa-google-drive"></i>
+                            </div>
+                            <h4>Google Drive</h4>
+                            <p>Direct download link</p>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="tool-card" data-category="downloader" data-service="github">
+                            <div class="tool-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h4>GitHub</h4>
+                            <p>Download file dan repo GitHub</p>
+                        </div>
+
+                        <!-- Lahelu -->
+                        <div class="tool-card" data-category="downloader" data-service="lahelu">
+                            <div class="tool-icon">
+                                <i class="fas fa-laugh"></i>
+                            </div>
+                            <h4>Lahelu</h4>
+                            <p>Download media dari Lahelu</p>
+                        </div>
+
+                        <!-- MediaFire -->
+                        <div class="tool-card" data-category="downloader" data-service="mediafire">
+                            <div class="tool-icon">
+                                <i class="fas fa-cloud-download-alt"></i>
+                            </div>
+                            <h4>MediaFire</h4>
+                            <p>Download file dari MediaFire</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Games Section -->
+            <section id="games" class="tools-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h3>Games & Quiz</h3>
+                        <p>Kumpulan games dan quiz interaktif yang seru</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <!-- Asah Otak -->
+                        <div class="tool-card" data-category="games" data-service="asahotak">
+                            <div class="tool-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Asah Otak</h4>
+                            <p>Kuis tebak-tebakan menantang</p>
+                        </div>
+
+                        <!-- Cak Lontong -->
+                        <div class="tool-card" data-category="games" data-service="caklontong">
+                            <div class="tool-icon">
+                                <i class="fas fa-theater-masks"></i>
+                            </div>
+                            <h4>Cak Lontong</h4>
+                            <p>Quiz dengan jawaban lucu dan unik</p>
+                        </div>
+
+                        <!-- Family 100 -->
+                        <div class="tool-card" data-category="games" data-service="family100">
+                            <div class="tool-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Family 100</h4>
+                            <p>Game tebak jawaban survey</p>
+                        </div>
+
+                        <!-- Cerdas Cermat -->
+                        <div class="tool-card" data-category="games" data-service="cc-sd">
+                            <div class="tool-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Cerdas Cermat</h4>
+                            <p>Kuis pendidikan berbagai mata pelajaran</p>
+                            <div class="tool-badge">Edukasi</div>
+                        </div>
+
+                        <!-- Tebak Kabupaten -->
+                        <div class="tool-card" data-category="games" data-service="kabupaten">
+                            <div class="tool-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4>Tebak Kabupaten</h4>
+                            <p>Game tebak nama kabupaten Indonesia</p>
+                        </div>
+
+                        <!-- Tebak Karakter FreeFire -->
+                        <div class="tool-card" data-category="games" data-service="karakter-freefire">
+                            <div class="tool-icon">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <h4>Tebak Karakter FreeFire</h4>
+                            <p>Game tebak karakter FreeFire</p>
+                        </div>
+
+                        <!-- Siapakah Aku -->
+                        <div class="tool-card" data-category="games" data-service="siapakahaku">
+                            <div class="tool-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h4>Siapakah Aku</h4>
+                            <p>Game tebak dari deskripsi</p>
+                        </div>
+
+                        <!-- Tebak Surah -->
+                        <div class="tool-card" data-category="games" data-service="surah">
+                            <div class="tool-icon">
+                                <i class="fas fa-book-quran"></i>
+                            </div>
+                            <h4>Tebak Surah</h4>
+                            <p>Game tebak surah Al-Quran</p>
+                            <div class="tool-badge">Religi</div>
+                        </div>
+
+                        <!-- Susun Kata -->
+                        <div class="tool-card" data-category="games" data-service="susunkata">
+                            <div class="tool-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h4>Susun Kata</h4>
+                            <p>Game menyusun kata acak</p>
+                        </div>
+
+                        <!-- Tebak Bendera -->
+                        <div class="tool-card" data-category="games" data-service="tebakbendera">
+                            <div class="tool-icon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <h4>Tebak Bendera</h4>
+                            <p>Game tebak bendera negara</p>
+                        </div>
+
+                        <!-- Tebak Gambar -->
+                        <div class="tool-card" data-category="games" data-service="tebakgambar">
+                            <div class="tool-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h4>Tebak Gambar</h4>
+                            <p>Game tebak kata dari gambar</p>
+                        </div>
+
+                        <!-- Tebak Game -->
+                        <div class="tool-card" data-category="games" data-service="tebakgame">
+                            <div class="tool-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Tebak Game</h4>
+                            <p>Game tebak judul game</p>
+                        </div>
+
+                        <!-- Tebak Hero ML -->
+                        <div class="tool-card" data-category="games" data-service="tebakheroml">
+                            <div class="tool-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Tebak Hero ML</h4>
+                            <p>Game tebak hero Mobile Legends</p>
+                        </div>
+
+                        <!-- Tebak JKT48 -->
+                        <div class="tool-card" data-category="games" data-service="tebakjkt">
+                            <div class="tool-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h4>Tebak JKT48</h4>
+                            <p>Game tebak member JKT48</p>
+                        </div>
+
+                        <!-- Tebak Lagu -->
+                        <div class="tool-card" data-category="games" data-service="tebaklagu">
+                            <div class="tool-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h4>Tebak Lagu</h4>
+                            <p>Game tebak judul lagu</p>
+                        </div>
+
+                        <!-- Tebak Lirik -->
+                        <div class="tool-card" data-category="games" data-service="tebaklirik">
+                            <div class="tool-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <h4>Tebak Lirik</h4>
+                            <p>Game tebak lirik lagu</p>
+                        </div>
+
+                        <!-- Tebak Logo -->
+                        <div class="tool-card" data-category="games" data-service="tebaklogo">
+                            <div class="tool-icon">
+                                <i class="fas fa-trademark"></i>
+                            </div>
+                            <h4>Tebak Logo</h4>
+                            <p>Game tebak logo brand</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools Section -->
+            <section id="tools" class="tools-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h3>Utility Tools</h3>
+                        <p>Berbagai tools utilitas yang berguna</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <!-- NPM Check -->
+                        <div class="tool-card" data-category="tools" data-service="npm">
+                            <div class="tool-icon">
+                                <i class="fab fa-npm"></i>
+                            </div>
+                            <h4>NPM Package Check</h4>
+                            <p>Cek informasi package NPM</p>
+                        </div>
+
+                        <!-- Resi Check -->
+                        <div class="tool-card" data-category="tools" data-service="resi">
+                            <div class="tool-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h4>Cek Resi</h4>
+                            <p>Lacak paket pengiriman</p>
+                            <div class="tool-badge">Useful</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- APK Section -->
+            <section id="apk" class="tools-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h3>APK Search</h3>
+                        <p>Pencarian aplikasi Android dari berbagai sumber</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <!-- APK Mody -->
+                        <div class="tool-card" data-category="apk" data-service="apkmody">
+                            <div class="tool-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <h4>APK Mody</h4>
+                            <p>Pencarian aplikasi modifikasi</p>
+                        </div>
+
+                        <!-- APK Pure -->
+                        <div class="tool-card" data-category="apk" data-service="apkpure">
+                            <div class="tool-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <h4>APK Pure</h4>
+                            <p>Pencarian aplikasi original</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Uploader Section -->
+            <section id="uploader" class="tools-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h3>File Uploader</h3>
+                        <p>Upload file dan dapatkan link shareable</p>
+                    </div>
+
+                    <div class="uploader-card">
+                        <div class="card-body">
+                            <div class="upload-area" id="uploadArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h4>Drop files here or click to upload</h4>
+                                <p>Max file size: 100MB</p>
+                                <input type="file" id="fileInput" hidden>
+                            </div>
+                            <div class="upload-progress hidden" id="uploadProgress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                                <span class="progress-text" id="progressText">0%</span>
+                            </div>
+                            <div class="upload-result hidden" id="uploadResult">
+                                <div class="result-success">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h5>Upload Successful!</h5>
+                                    <div class="result-url">
+                                        <input type="text" id="resultUrl" readonly>
+                                        <button class="copy-btn" id="copyUrlBtn">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <a href="#" id="openUrlBtn" target="_blank" class="open-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Open File
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Universal Input Section -->
+            <section class="input-section" id="inputSection">
+                <div class="section-container">
+                    <div class="input-card">
+                        <div class="card-header">
+                            <h4 id="inputTitle">Tool Configuration</h4>
+                            <button id="closeInput" class="close-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="inputContent">
+                                <!-- Dynamic content will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Result Section -->
+            <section class="result-section hidden" id="resultSection">
+                <div class="section-container">
+                    <div class="result-card">
+                        <div class="card-header">
+                            <h4 id="resultTitle">Result</h4>
+                            <button id="closeResult" class="close-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="resultContent">
+                                <!-- Results will be displayed here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚡</div>
+                        <span>Egunkari Complete Tools</span>
+                    </div>
+                    <p>Platform lengkap dengan 50+ fitur tools untuk berbagai kebutuhan.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Categories</h5>
+                    <a href="#downloader" class="footer-link">Downloader</a>
+                    <a href="#games" class="footer-link">Games</a>
+                    <a href="#tools" class="footer-link">Tools</a>
+                    <a href="#apk" class="footer-link">APK</a>
+                    <a href="#uploader" class="footer-link">Uploader</a>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Support</h5>
+                    <a href="#" class="footer-link">Help Center</a>
+                    <a href="#" class="footer-link">API Docs</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Connect</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Egunkari Complete Tools. Built with ❤️ for the developer community.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-dot"></div>
+            </div>
+            <h4 id="loadingTitle">Processing Your Request</h4>
+            <p id="loadingMessage">This may take a few seconds...</p>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+            <button class="toast-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
