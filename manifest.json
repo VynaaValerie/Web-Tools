@@ -1,0 +1,25 @@
+{
+  "name": "Egunkari Complete Web Tools",
+  "short_name": "Egunkari Tools",
+  "description": "Complete web tools dengan downloader media, games, tools, APK search, dan file uploader",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "id",
+  "categories": ["utilities", "entertainment", "productivity"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHBhdGggZD0iTTk2IDQ4QzcwLjQgNDggNDggNzAuNCA0OCA5NnMyMi40IDQ4IDQ4IDQ4IDQ4LTIyLjQgNDgtNDhTMTIxLjYgNDggOTYgNDh6bTAgMTYwYy0zMC45IDAtNTYtMjUuMS01Ni01NnMyNS4xLTU2IDU2LTU2IDU2IDI1LjEgNTYgNTYtMjUuMSA1Ni01NiA1NnoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMjggOTZoLTE2djE2aC0xNnYtMTZINjR2LTE2aDE2VjY0aDE2djE2aDE2djE2eiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTgwIDEyOGgzMnYxNkg4MHYtMTZ6IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiM2MzY2ZjEiLz4KPHBhdGggZD0iTTI1NiA5NkMxNzMuNiA5NiAxMDYgMTYzLjYgMTA2IDI1NnM2Ny42IDE2MCAxNTAgMTYwIDE1MC02Ny42IDE1MC0xNTBTMzM4LjQgOTYgMjU2IDk2em0wIDI4OGMtNzAuNyAwLTEyOC01Ny4zLTEyOC0xMjhTMTg1LjMgMTI4IDI1NiAxMjhzMTI4IDU3LjMgMTI4IDEyOC01Ny4zIDEyOC0xMjggMTI4eiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTM0NCAyNTZoLTI0OHYtNDhoMjQ4djQ4eiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTIwOCAzMjBoOTZ2LTQ4aC05NnY0OHoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
